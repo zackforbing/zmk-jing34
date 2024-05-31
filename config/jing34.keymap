@@ -207,10 +207,10 @@
 
         Nav+Func_win {
             bindings = <
-&trans             &trans  &trans        &trans  &trans  &trans  &trans  &trans           &trans  &trans
-&hm LGUI NUMBER_6  &trans  &hm LCTRL N8  &trans  &trans  &trans  &trans  &hm RCTRL MINUS  &trans  &hm RGUI GRAVE
-&trans             &trans  &trans        &trans  &trans  &trans  &trans  &trans           &trans  &trans
-                                         &trans  &trans          &trans  &trans
+&trans               &mt LALT HOME  &trans     &mt LALT END  &trans         &trans  &trans  &trans        &trans  &trans
+&hm LCTRL PAGE_DOWN  &trans         &trans     &trans        &trans         &trans  &trans  &hm RCTRL F6  &trans  &hm RGUI F8
+&kp LC(Z)            &kp LC(X)      &kp LC(C)  &kp LC(V)     &kp LS(LC(K))  &trans  &trans  &trans        &trans  &trans
+                                               &trans        &trans                 &trans  &trans
             >;
         };
 
@@ -230,6 +230,11 @@
         num_sym_win {
             if-layers = <1 2>;
             then-layer = <3>;
+        };
+
+        nav_func_win {
+            if-layers = <1 4>;
+            then-layer = <5>;
         };
     };
 };
