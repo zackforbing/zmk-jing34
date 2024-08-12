@@ -136,7 +136,7 @@ jing34_spi: &spi0 {
     };
 };
 
-zephyr_udc0: &usb0 {
+zephyr_udc0: &usbd {
         status = "okay";
 
         pinctrl-0 = <&usb_dc_default>;
