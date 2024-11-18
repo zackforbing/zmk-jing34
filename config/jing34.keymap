@@ -39,7 +39,7 @@
 
         caps_word {
             bindings = <&caps_word>;
-            key-positions = <14 15>;
+            key-positions = <13 16>;
         };
 
         toggle_nav {
@@ -78,12 +78,6 @@
         bt_clear_all {
             bindings = <&bt BT_CLR_ALL>;
             key-positions = <20 21 29 28 22 27>;
-        };
-
-        pw {
-            bindings = <&pw>;
-            key-positions = <10 1 8 19>;
-            layers = <2>;
         };
 
         toggle_win {
@@ -165,13 +159,6 @@
             #binding-cells = <0>;
             bindings = <&kp FSLH &kp STAR &kp STAR &kp SPACE>;
             label = "JSDOC";
-        };
-
-        pw: pw {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(Y) &kp F &kp LS(P) &kp N2 &kp N7 &kp E &kp X &kp AT &kp N4 &kp PRCNT &kp N4 &kp LS(V) &kp LS(E) &kp LS(F) &kp LS(T) &kp ENTER>;
-            label = "PW";
         };
     };
 
