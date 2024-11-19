@@ -72,10 +72,7 @@ kscan0: kscan {
     };
 
     vbatt: vbatt {
-        compatible = "zmk,battery-voltage-divider";
-        io-channels = <&adc 3>;
-        output-ohms = <10000000>;
-        full-ohms = <(10000000 + 2200000)>;
+        compatible = "zmk,battery-nrf-vddh"
     };
 };
 
