@@ -86,7 +86,7 @@
 
         globe {
             bindings = <&kp GLOBE>;
-            key-positions = <21 20 22>;
+            key-positions = <21 20>;
         };
 
         toggle_win {
