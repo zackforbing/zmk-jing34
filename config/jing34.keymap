@@ -34,7 +34,7 @@
 
         hold_space {
             bindings = <&kp SPACE>;
-            key-positions = <31 23>;
+            key-positions = <23 31>;
         };
 
         caps_word {
@@ -43,9 +43,9 @@
         };
 
         toggle_nav {
-            bindings = <&tog 4>;
+            bindings = <&tog 2>;
             key-positions = <11 2 13>;
-            layers = <0 4>;
+            layers = <0 2>;
             require-prior-idle-ms = <350>;
         };
 
@@ -59,15 +59,14 @@
             key-positions = <13 12 16 17>;
         };
 
-        screenshot_mac {
+        screen_shot {
             bindings = <&kp LS(LG(N5))>;
             key-positions = <0 11>;
-            layers = <0 2>;
         };
 
-        reset {
-            bindings = <&sys_reset>;
-            key-positions = <0 31 32 9>;
+        soft_off {
+            bindings = <&soft_off>;
+            key-positions = <0 32 9 31>;
         };
 
         bootloader {
@@ -80,6 +79,16 @@
             key-positions = <20 21 29 28 22 27>;
         };
 
+        reset {
+            bindings = <&sys_reset>;
+            key-positions = <30 31 32 33 34 35>;
+        };
+
+        globe {
+            bindings = <&kp GLOBE>;
+            key-positions = <21 20 22>;
+        };
+
         toggle_win {
             bindings = <&tog 1>;
             key-positions = <0 9>;
@@ -89,6 +98,26 @@
             bindings = <&kp LS(LG(S))>;
             key-positions = <0 11>;
             layers = <1>;
+        };
+
+        force_quit_mac {
+            bindings = <&kp LA(LG(ESCAPE))>;
+            key-positions = <0 1 2>;
+        };
+
+        mo_6_left {
+            bindings = <&mo 6>;
+            key-positions = <30 31>;
+        };
+
+        mo_6_right {
+            bindings = <&mo 6>;
+            key-positions = <32 33>;
+        };
+
+        studio_unlock {
+            bindings = <&studio_unlock>;
+            key-positions = <20 21 28 29>;
         };
     };
 
