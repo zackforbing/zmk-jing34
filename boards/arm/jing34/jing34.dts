@@ -72,7 +72,7 @@ kscan0: kscan {
     };
 
     vbatt: vbatt {
-        compatible = "zmk,battery-nrf-vddh"
+        compatible = "zmk,battery-nrf-vddh";
     };
 };
 
